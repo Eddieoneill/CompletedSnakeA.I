@@ -14,6 +14,7 @@
 		6C5AA9E8239581FF0052A5EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C5AA9E7239581FF0052A5EF /* Assets.xcassets */; };
 		6C5AA9EB239581FF0052A5EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5AA9E9239581FF0052A5EF /* LaunchScreen.storyboard */; };
 		6C5AA9F6239581FF0052A5EF /* CompletedSnakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5AA9F5239581FF0052A5EF /* CompletedSnakeTests.swift */; };
+		6C5AAA01239583770052A5EF /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5AAA00239583770052A5EF /* Snake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		6C5AA9F1239581FF0052A5EF /* CompletedSnakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompletedSnakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5AA9F5239581FF0052A5EF /* CompletedSnakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedSnakeTests.swift; sourceTree = "<group>"; };
 		6C5AA9F7239581FF0052A5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C5AAA00239583770052A5EF /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				6C5AA9DE239581FD0052A5EF /* AppDelegate.swift */,
 				6C5AA9E0239581FD0052A5EF /* SceneDelegate.swift */,
 				6C5AA9E2239581FD0052A5EF /* ViewController.swift */,
+				6C5AAA00239583770052A5EF /* Snake.swift */,
 				6C5AA9E4239581FD0052A5EF /* Main.storyboard */,
 				6C5AA9E7239581FF0052A5EF /* Assets.xcassets */,
 				6C5AA9E9239581FF0052A5EF /* LaunchScreen.storyboard */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C5AAA01239583770052A5EF /* Snake.swift in Sources */,
 				6C5AA9E3239581FD0052A5EF /* ViewController.swift in Sources */,
 				6C5AA9DF239581FD0052A5EF /* AppDelegate.swift in Sources */,
 				6C5AA9E1239581FD0052A5EF /* SceneDelegate.swift in Sources */,
