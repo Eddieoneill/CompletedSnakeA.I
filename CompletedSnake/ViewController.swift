@@ -21,6 +21,9 @@ class ViewController: UIViewController {
     var funNumber = 69
     override func viewDidLoad() {
         super.viewDidLoad()
+        for pixel in board {
+            pixel.backgroundColor = .white
+        }
         pixelArray = board.sorted(by: { $0.tag > $1.tag })
         while pixelArray.count < 69 {
             for pixel in board {
@@ -32,21 +35,21 @@ class ViewController: UIViewController {
                 }
             }
         }
-        gameTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
+        gameTimer = Timer.scheduledTimer(timeInterval: 0.025, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
     }
     
     @objc func onTimerFires() {
         if number <= 69 && count % 2 == 0 {
-            pixelArray[number].backgroundColor = .green
-            pixelArray[funNumber].backgroundColor = .blue
+            pixelArray[number].backgroundColor = .black
+            pixelArray[funNumber].backgroundColor = .gray
             funNumber -= 1
             number += 1
             conditionNumber += 1
         } else if conditionNumber < 0 && count % 2 == 1  {
             number -= 1
             funNumber += 1
-            pixelArray[number].backgroundColor = .black
-            pixelArray[funNumber].backgroundColor = .gray
+            pixelArray[number].backgroundColor = .green
+            pixelArray[funNumber].backgroundColor = .blue
             conditionNumber += 1
         } else {
             conditionNumber = -70
@@ -54,9 +57,9 @@ class ViewController: UIViewController {
             
         }
         print(number)
-//        if number == 70 {
-//            gameTimer?.invalidate()
-//        }
+        if number == 70 {
+            gameTimer?.invalidate()
+        }
     }
     
     
